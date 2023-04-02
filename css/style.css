@@ -1,0 +1,295 @@
+/* RESET CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Phần BANNER với Backgroung-img */
+
+#banner {
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.banner-title {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* Thanh điều hướng */
+
+#nav-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navborder-right {
+  border-right: 1px solid #adb5bd;
+}
+
+.navborder-left {
+  border-left: 1px solid #adb5bd;
+}
+
+#navbar-link {
+  margin-right: 15em;
+}
+
+#nav-bar--mb {
+  justify-content: center;
+}
+
+.img__navbar {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 150px;
+  height: 150px;
+}
+
+/* 6 border-job */
+
+.job--list span {
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+  background: #ccc;
+}
+ul {
+  list-style: none;
+}
+
+#personal-info ul,
+#job-info ul {
+  padding-left: 0;
+}
+
+.personal-info--icon i,
+.job--list i,
+.footer-list--icon i,
+.navbar i {
+  color: #199cdb;
+}
+
+/* Phần chứng chỉ và giải thưởng */
+
+.certificate--img {
+  padding: 0 1em 2em 1em;
+  height: 10em;
+}
+
+.img2 {
+  border-left: 1px solid #d6c08d;
+}
+
+#border--top {
+  border-top: 1px solid #d6c08d;
+  padding-top: 2em;
+}
+
+/* Phần các dự án đã tham gia */
+
+.project--info a {
+  display: block;
+  color: #000;
+}
+
+.project--img {
+  width: 26em;
+}
+
+#padding--table th {
+  padding-bottom: 1.25em;
+}
+
+/* Phần chân trang */
+
+.footer-list--icon {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  height: 10vh;
+  font-size: 18px;
+  margin: 84px auto 0 auto;
+}
+
+.footer-list--icon i {
+  font-size: 30px;
+}
+
+.footer-list--icon a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET from 768px to 1024px */
+@media (max-width: 1024px) and (min-width: 741px) {
+  #banner {
+    height: 21em;
+  }
+
+  .img__navbar {
+    display: none;
+  }
+
+  #navbar-link {
+    margin-right: 3em;
+  }
+
+  #mq-style {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #mq-style--item {
+    grid-area: 1 / 2 / 2 / -1;
+  }
+
+  #mq-style--item2 {
+    grid-area: 2 / 2 / 3 / -1;
+  }
+
+  #mq-style--item3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  #mq-style--item4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  #mq-style2 > .mq-style2--item {
+    flex-direction: column;
+    padding-top: 1em;
+  }
+
+  #certificate--img3 {
+    width: 28.5em;
+  }
+
+  #border--left {
+    padding-left: 1em;
+    border-left: 1px solid #d6c08d;
+  }
+
+  .project--img {
+    width: 18.5em;
+  }
+
+  .project-list {
+    flex-wrap: wrap;
+  }
+  #mq-style-table {
+    margin-bottom: 1.6em;
+  }
+  #mq-style-table2 {
+    margin-bottom: 1.6em;
+  }
+}
+
+/* MOBILE <740px */
+@media (max-width: 740px) {
+  #banner {
+    background-position: center;
+    background-size: cover;
+    height: 45em;
+  }
+
+  #nav-bar--mb {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .img__navbar {
+    display: none;
+  }
+
+  .navborder-left {
+    border: none;
+  }
+
+  .navborder-right {
+    border: none;
+  }
+
+  .row {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  #mq-style {
+    display: grid;
+    grid-template-columns: 590px;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  #mq-style--item3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #mq-style--item {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  #mq-style--item2 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  #mq-style--item4 {
+    grid-area: 3 / 1 / 4 /2;
+  }
+
+  #mq-style2 {
+    flex-direction: column;
+  }
+
+  #mq-style2 > .mq-style2--item {
+    flex-direction: column;
+  }
+
+  #border--left {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  #border--top {
+    border: none;
+  }
+
+  .img2 {
+    border-left: none;
+  }
+
+  .mq-style2--item {
+    width: 100%;
+  }
+  .certificate--img {
+    height: 15em;
+  }
+
+  .certificate-border {
+    border-bottom: 1px solid #dc3545;
+  }
+
+  /* .project-list {
+    flex-direction: column;
+  } */
+
+  .project--img {
+    width: 100%;
+  }
+}
