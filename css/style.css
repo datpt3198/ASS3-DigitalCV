@@ -205,6 +205,16 @@ ul {
   margin-top: 12px;
 }
 
+.pseudo-btn {
+  padding: 0 6px;
+  background-color: #0d6efd;
+  text-decoration: none;
+  text-align: center;
+  width: 52px !important;
+  border-radius: 10px;
+  color: #fff;
+}
+
 .project-table {
   border: 1px solid #adb5bd;
   font-size: 16px;
